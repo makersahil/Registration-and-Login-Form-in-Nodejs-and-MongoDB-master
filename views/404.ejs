@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Success</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            },
+            plugins: [
+                // ...
+                require('@tailwindcss/forms'),
+            ],
+        }
+    </script>
+</head>
+<body>
+    <section class="flex items-center h-full p-16 bg-gray-50 text-gray-800">
+        <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+            <div class="max-w-md text-center">
+                <h2 class="mb-8 font-extrabold text-9xl text-gray-400">
+                    <span class="sr-only">Error</span>404
+                </h2>
+                <p class="text-2xl font-semibold md:text-3xl">Sorry, we couldn't find this page.</p>
+                <p class="mt-4 mb-8 text-gray-600">But dont worry, you can find plenty of other things on our homepage.</p>
+                <a rel="noopener noreferrer" href="/dashboard" class="font-bold py-3 px-8 no-underline hover:bg-blue-600 hover:text-white hover:no-underline rounded bg-blue-500 text-white bg-blue-700">Back to homepage</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
